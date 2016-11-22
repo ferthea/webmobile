@@ -49,12 +49,14 @@
   height: calc(100vh - 56px);
   background-image: url("../img/fondo.png");
   background-size: cover;
-  opacity: 0.8;
+  opacity: 1;
+
 }
 
 #content h3{
   text-align: center;
-  font-weight: lighter;
+  font-weight: 400;
+  margin-top: 50px;
 }
 
 #mobile-demo li.logo{
@@ -68,10 +70,19 @@
   color: #B71C1C;
 }
 
-#inscribirse{
+#abajo{
+  max-width: 95%;
   position: absolute;
-  bottom: 64px;
-  max-width: 90vw;
+  bottom: 10px;
+}
+
+#inscribirse{
   height: 50px;
   font-size: 1.25em;
+}
+
+#abajo p{
+  margin-top: 50px;
+  font-size: 1.5em;
+  color: white;
 }
