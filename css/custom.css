@@ -1,0 +1,22 @@
+.brand-logo img{
+  padding-top: 5px;
+}
+
+.nav-wrapper i{
+  color: black;
+}
+
+#test{
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 56px);
+  background-color: red;
+  background-image: url("../img/fondo.png");
+  background-size: cover;;
+}
+
+#mobile-demo li.logo{
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 22px;
+}
