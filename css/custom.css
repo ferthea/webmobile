@@ -43,17 +43,35 @@
   color: black;
 }
 
-#test{
+#content{
   position: absolute;
   width: 100%;
   height: calc(100vh - 56px);
-  background-color: red;
   background-image: url("../img/fondo.png");
-  background-size: cover;;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#content h3{
+  text-align: center;
+  font-weight: lighter;
 }
 
 #mobile-demo li.logo{
   text-align: center;
   margin-top: 32px;
   margin-bottom: 22px;
+}
+
+#mobile-demo li:hover i,
+#mobile-demo li:hover a{
+  color: #B71C1C;
+}
+
+#inscribirse{
+  position: absolute;
+  bottom: 64px;
+  max-width: 90vw;
+  height: 50px;
+  font-size: 1.25em;
 }
