@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/custom.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <nav class="white">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">
+          <img src="img/logo.png" alt="">
+        </a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+        <div class="right" style="margin-right: 18px;">
+          <i class="material-icons">search</i>
+        </div>
+        <ul class="side-nav" id="mobile-demo">
+          <li class="logo"><img src="img/logo.png" alt="">
+          </li>
+          <li><a href="inscribirse.html">
+            <i class="material-icons">edit</i>
+            <span>Inscribirse</span>
+            </a>
+          </li>
+          <li><a href="cursos.html">
+            <i class="material-icons">assignment</i>Cursos</a>
+          </li>
+          <li><a href="galeria.html">
+            <i class="material-icons">photo_library</i>
+            <span>Galeria</span>
+          </a>
+          </li>
+          <li><a href="nosotros.html">
+            <i class="material-icons">people</i>Nosotros</a>
+          </li>
+          <li><a href="contacto.html">
+            <i style="color: #B71C1C" class="material-icons">email</i>
+            <span style="color: #B71C1C">Contacto</span>
+          </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <span style="text-align: center">
+            <h5>Contacto</h5>
+          </span>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: -20px;">
+        <form action="" class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="nombre" type="text" class="validate">
+              <label for="nombre">Nombre</label>
+            </div>
+
+            <div class="input-field col s12">
+              <input id="correo" type="text" class="validate">
+              <label for="correo">Email</label>
+            </div>
+
+            <div class="input-field col s12">
+              <select id="select">
+                <option value="" disabled selected>Motivo</option>
+                <option value="1">Cursos</option>
+                <option value="2">Inscripción</option>
+                <option value="3">Otro</option>
+              </select>
+            </div>
+
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea" length="150"></textarea>
+              <label for="textarea1">Comentario</label>
+            </div>
+
+            <div class="input-field">
+              <button style="margin-top: 25px;" type="submit" class="btn waves-effect waves-light submit red darken-4 right" name="enviar">
+                <span>Enviar</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(".button-collapse").sideNav();
+      $(document).ready(function() {
+        $('select').material_select();
+      });
+    </script>
+  </body>
+</html>
